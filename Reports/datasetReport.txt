@@ -1,0 +1,92 @@
+
+  📊 Dataset Summary Report
+
+   📁 Dataset Information
+
+    Dataset Name:   GTSRB 
+        Number of Classes:   43 traffic sign categories
+
+---
+
+    Dataset Size
+
+    Total Images:   8,600
+
+    🔹 Split Distribution:
+
+    Training Set:   6,020 images (70%)
+    Validation Set:   1,290 images (15%)
+    Test Set:   1,290 images (15%)
+
+---
+
+    Class Distribution
+
+  All classes are   perfectly balanced  
+  Each class contains:
+
+      200 images total  
+      140 images in training  
+      30 images in validation  
+      30 images in testing  
+
+ This ensures:
+
+  No class bias
+  Fair model training
+  Reliable evaluation
+
+---
+
+    Data Preprocessing Steps
+
+The dataset was carefully prepared through the following steps:
+
+  ✔️ Removal of corrupted images
+  ✔️ Removal of duplicate images
+  ✔️ Verification of readable images
+  ✔️ Removal of empty classes
+  ✔️ Creation of a balanced subset (200 images per class)
+  ✔️ Dataset split into train/validation/test (70/15/15)
+  ✔️ Image resizing to   64 × 64 pixels  
+  ✔️ Label formatting using folder structure
+  ✔️ Metadata file (`dataset_metadata.csv`) created
+
+---
+
+    Image Specifications
+
+    Image Size:   64 × 64 pixels
+    Color Format:   RGB (3 channels)
+    Data Type:   Images stored in standard formats (.png / .jpg)
+
+---
+
+   Data Quality Notes
+
+  Dataset includes variations in:
+
+    Lighting conditions
+    Viewing angles
+    Distances and scales
+  This improves model generalization to real-world scenarios
+
+---
+
+   ⚠️ Important Considerations
+
+  Data augmentation will be applied   during training only  
+  Image normalization will be handled in the model pipeline
+  Test dataset remains untouched to ensure unbiased evaluation
+
+---
+
+   Final Status
+
+The dataset is:
+
+  ✔ Clean
+  ✔ Balanced
+  ✔ Properly split
+  ✔ Standardized
+  ✔ Ready for CNN training
